@@ -9,9 +9,9 @@ register_notification_parameters("pushbullet.py",
                 help = _("Your Pushbullet API token, available from https://www.pushbullet.com/#settings/account")
               ),
             ),
-            ( "user",
+            ( "push_channel",
               TextAscii(
-                title = _("Username/JID"),
+                title = _("Channel Tag"),
                 help = _("The channel tag, available from https://www.pushbullet.com/#settings/channels")
               ),
             ),
