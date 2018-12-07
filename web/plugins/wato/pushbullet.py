@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-register_notification_parameters("xmpp.pl",
+register_notification_parameters("pushbullet.py",
     Dictionary(
         elements = [
             ( "push_token",
