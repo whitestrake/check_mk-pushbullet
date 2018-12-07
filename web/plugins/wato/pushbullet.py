@@ -2,6 +2,7 @@
 
 register_notification_parameters("pushbullet.py",
     Dictionary(
+        optional_keys = [],
         elements = [
             ( "push_token",
               TextAscii(

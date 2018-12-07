@@ -20,11 +20,15 @@ else:
   newstate=os.getenv('NOTIFY_SERVICESTATE')
  
 # Configure push auth, details, and format
-push_channel=os.getenv('NOTIFY_PARAMETER_push_channel')
-push_token=os.getenv('NOTIFY_PARAMETER_push_token')
+push_channel=os.getenv('NOTIFY_PARAMETER_PUSH_CHANNEL')
+push_token=os.getenv('NOTIFY_PARAMETER_PUSH_TOKEN')
 push_title=hostalias.upper()+' '+notification
 push_body=service+' '+oldstate+' -> '+output+' ('+hostname+')'
- 
+
+# Make sure token / channel aren't empty
+if (not push_channel) or (not push_token):
+  sys.exit("didn't receive the expected token or channel tag")
+
 # Set up request
 push_url='https://api.pushbullet.com/v2/pushes'
 push_header={'Access-Token' : push_token,
