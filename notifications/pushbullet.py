@@ -20,8 +20,8 @@ else:
   newstate=os.getenv('NOTIFY_SERVICESTATE')
  
 # Configure push auth, details, and format
-push_channel=os.getenv('NOTIFY_PARAMETER_push_token')
-push_token=os.getenv('NOTIFY_PARAMETER_push_channel')
+push_channel=os.getenv('NOTIFY_PARAMETER_push_channel')
+push_token=os.getenv('NOTIFY_PARAMETER_push_token')
 push_title=hostalias.upper()+' '+notification
 push_body=service+' '+oldstate+' -> '+output+' ('+hostname+')'
  
