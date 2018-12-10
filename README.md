@@ -1,6 +1,6 @@
 # check_mk-pushbullet
 
-This plugin for Check_MK contains a Python script designed to take advantage of the [Pushbullet API](https://docs.pushbullet.com/) to push alert notifications directly to your phone.
+This plugin for Check_MK contains a Python script designed to take advantage of the [Pushbullet API](https://docs.pushbullet.com/) to push alert notifications directly to your phone, and is directly configurable via WATO.
 
 A major advantage of this method of notification is Pushbullet's channel system - when supplied with a user's API key and a channel tag, Check_MK can push notifications to channels that can be subscribed to by multiple other Pushbullet users. This allows for multiple tiers of alerts to be pushed to different groups of people.
 
